@@ -179,7 +179,7 @@ class _SIFormState extends State<SIForm> {
                             ),
                             onPressed: () {
                               setState(() {
-                                if (_formKey.currentState.validate()) {
+                                if (_formKey.currentState.validate()) { // validating on submit
                                   this.displayResult = _calculateTotalReturns();
                                 }
                               });
